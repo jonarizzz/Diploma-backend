@@ -1,33 +1,37 @@
 package application.entities;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
+@Table(name = "policies")
 public class Policies {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    @Column(name = "number")
+    private Integer number;
 
+    @Column(name = "sum")
     private Integer sum;
 
-    private Integer client_id;
+    @Column(name = "client_id")
+    private Integer clientId;
 
-    private Integer employee_id;
+    @Column(name = "employee_id")
+    private Integer employeeId;
 
+    @Column(name = "insurance_type_id")
     private Integer insurance_type_id;
 
+    @Column(name = "insurance_case_id")
     private Integer insurance_case_id;
 
-    public Integer getId() {
-        return id;
+    public Integer getNumber() {
+        return number;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+    public void setNumber(Integer number) {
+        this.number = number;
     }
 
     public Integer getSum() {
@@ -38,20 +42,20 @@ public class Policies {
         this.sum = sum;
     }
 
-    public Integer getClient_id() {
-        return client_id;
+    public Integer getClientId() {
+        return clientId;
     }
 
-    public void setClient_id(Integer client_id) {
-        this.client_id = client_id;
+    public void setClientId(Integer clientId) {
+        this.clientId = clientId;
     }
 
-    public Integer getEmployee_id() {
-        return employee_id;
+    public Integer getEmployeeId() {
+        return employeeId;
     }
 
-    public void setEmployee_id(Integer employee_id) {
-        this.employee_id = employee_id;
+    public void setEmployeeId(Integer employeeId) {
+        this.employeeId = employeeId;
     }
 
     public Integer getInsurance_type_id() {
