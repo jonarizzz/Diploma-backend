@@ -3,27 +3,20 @@ package application.entities;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "policies")
 public class Policies {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "number")
     private Integer number;
 
-    @Column(name = "sum")
     private Integer sum;
 
-    @Column(name = "client_id")
     private Integer clientId;
 
-    @Column(name = "employee_id")
     private Integer employeeId;
 
-    @Column(name = "insurance_type_id")
     private Integer insurance_type_id;
 
-    @Column(name = "insurance_case_id")
     private Integer insurance_case_id;
 
     public Integer getNumber() {

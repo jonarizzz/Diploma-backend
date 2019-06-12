@@ -3,7 +3,6 @@ package application.controllers;
 import application.entities.Clients;
 import application.repositories.ClientRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
