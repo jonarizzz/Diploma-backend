@@ -1,6 +1,5 @@
 package application.controllers;
 
-import application.entities.Clients;
 import application.entities.Policies;
 import application.repositories.PoliciesRepository;
 import org.springframework.beans.factory.annotation.Autowired;
